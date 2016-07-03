@@ -1,2 +1,2 @@
-# hjs99 Haskell/Java 8/ Scala 99 problems
+# hjs99: Haskell/Java 8/ Scala 99 problems
 
