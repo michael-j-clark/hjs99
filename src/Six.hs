@@ -1,6 +1,5 @@
 module Six where 
 
-import Data.List
 import Five
 
 --Find out whether a  list is a palindrome
