@@ -1,9 +1,5 @@
-module Two where
 
--- Last but one elem
+--(*) Find the last but one element of a list. 
 
-secondLast :: [a] -> a
-secondLast s@(x:xs)
-  | (length s < 2) = error "list must be longer than 2"
-  | (length s > 2) = secondLast xs
-  | otherwise   = x
+lastButOneElm :: [a] -> a
+lastButOneElm lst = head $ tail $ reverse $ lst 

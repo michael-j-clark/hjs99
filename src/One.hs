@@ -1,8 +1,10 @@
-module One where
 
+--(*) Find the last element of a list. 
 
---Find last elem of a lsit
+lastElmLst:: [a] -> a
+lastElmLst lst = head $ reverse $ lst
 
-last1 :: (Eq a) => [a] -> a
-last1 (a:[]) = a
-last1 (a:as) = last1 as
+myLast :: [a] -> a
+myLast [] = error "Empty list"
+myLast [x] = x
+myLast (x:xs) = myLast $ xs

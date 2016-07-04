@@ -1,8 +1,6 @@
-module Five where 
+-- (*) Reverse a list. 
 
-import Data.List
-
---Reverse a list
---cribbed from http://stackoverflow.com/questions/7862881/how-can-i-write-reverse-by-foldr-efficiently-in-haskell  Oct 22 '11 22:08 answer
-reverse' :: [a] -> [a]
-reverse' xs = foldl' (\a b -> [b] ++ a) [] xs
+reverseList :: [a] -> [a]
+reverseList [] = error "Empty list given"
+reverseList [x] = [x]
+reverseList (x:xs) =   (reverseList $ xs) ++ [x]
