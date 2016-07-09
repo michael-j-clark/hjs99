@@ -1,6 +1,6 @@
-module Eighteen where
+module ExtractS where
 
---(**) Extract a slice from a list.
+-- P18 Extract a slice from a list.
 
 --Given two indices, i and k, 
 --the slice is the list containing the elements 

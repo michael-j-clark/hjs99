@@ -1,6 +1,6 @@
-module Sixteen where
+module DropNth where
 
---(**) Drop every N'th element from a list. 
+--(Problem 16) Drop every N'th element from a list. 
 
 dropNth :: [a] -> Int -> [a]  
 dropNth [] _ = []
