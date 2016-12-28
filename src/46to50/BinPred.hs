@@ -28,7 +28,7 @@ or :: BinPredSig
 or True  True   = True
 or True  False  = True
 or False True   = True
-or False False  = True
+or False False  = False
 
 -- NAND is the negation of 'and'
 nand :: BinPredSig
@@ -41,7 +41,7 @@ nor _     _     = False
 xor :: BinPredSig
 xor True  False = True
 xor False True  = True
-xor _     _     = True
+xor _     _     = False
 
 impl :: BinPredSig
 impl a b = not $ a `or` b
